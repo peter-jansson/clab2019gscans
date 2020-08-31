@@ -1,5 +1,5 @@
 # clab2019gscans
-Parsers and analysers of data from reference [1].
+Parsers and analysers of data from reference [1], structured into folders corresponding to the language or platform used.
 
 ![LGPL-3](https://www.gnu.org/graphics/lgplv3-with-text-154x68.png)
 
