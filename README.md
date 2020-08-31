@@ -1,6 +1,8 @@
 # clab2019gscans
 Parsers and analysers of data from reference [1].
 
+![LGPL-3](https://www.gnu.org/graphics/lgplv3-with-text-154x68.png)
+
 
 ## References
 
