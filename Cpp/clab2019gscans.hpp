@@ -43,14 +43,14 @@ namespace clab2019gscans
 			{
 				metabatches.back().batches.back().events.emplace_back( event( line ) );
 			}
-			else if( line.find("meta-batch follows") != std::string::npos ) // A new meta batch follows.
-			{
-				metabatches.emplace_back( metabatch() );
-			}
 			else if( line.find("Batch begin") != std::string::npos ) // A new batch follows.
 			{
 				metabatches.back().batches.emplace_back( batch() );
 				metabatches.back().batches.back().livetime_us = std::stoull( line.substr(27) );
+			}
+			else if( line.find("meta-batch follows") != std::string::npos ) // A new meta batch follows.
+			{
+				metabatches.emplace_back( metabatch() );
 			}
 		}
 
