@@ -53,9 +53,10 @@ namespace clab2019gscans
 				metabatches.back().batches.back().livetime_us = std::stoull( line.substr(27) );
 			}
 		}
-		
+
 		return metabatches;
 	}
 
 }
+
 #endif

@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 
 #include "clab2019gscans.hpp"
 
