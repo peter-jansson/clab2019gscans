@@ -39,7 +39,7 @@ namespace clab2019gscans
 
 		for( std::string line; std::getline( i, line ); )
 		{
-			if( line.find("#") != 0 ) // We have an event data linte.
+			if( line.find("#") != 0 ) // We have an event data line.
 			{
 				metabatches.back().batches.back().events.emplace_back( event( line ) );
 			}
