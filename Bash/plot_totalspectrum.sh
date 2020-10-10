@@ -2,7 +2,7 @@
 
 # Script to plot, in SVG format, a total spectrum of counts
 # out of the file from the data archive given as $1.
-# The spectrum is written to file given as $2.
+# The spectrum plot is written to file given as $2.
 # Uses the C++ program ../Cpp/total_spectrum_from_stdin and curl.
 
 F=spectrum.json
