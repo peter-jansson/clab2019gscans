@@ -29,10 +29,10 @@ int main()
 
 	// Print the spectrum as a JSON array of counts.
 	std::cout << '[';
-	for( uint32_t ch(0); ch <= spectrum.rbegin()->first ; ++ch )
+	for( auto maxCh(spectrum.rbegin()->first), ch(0U); ch <= maxCh ; ++ch )
 	{
 		if( 0 != ch ) std::cout << ',';
-		std::cout << spectrum[ch]; // Output 0 in case ch is non-existent.
+		std::cout << spectrum[ch]; // 0 in case ch is non-existent
 	}
 	std::cout << ']';
 
