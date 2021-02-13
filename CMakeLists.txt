@@ -1,4 +1,4 @@
-PROJECT(clab2019scans)
+PROJECT(clab2019gscans)
 
 cmake_minimum_required(VERSION 3.5)
 
