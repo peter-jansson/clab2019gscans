@@ -4,11 +4,12 @@
 # out of the file from the data archive given as $1.
 # The spectrum plot is written to file given as $2.
 # Uses the C++ program ../Cpp/total_spectrum_from_stdin and curl.
+# Remember to set the search path to total_spectrum_from_stdin.
 
 F=spectrum.json
 
 echo -n "[" > "${F}"
-cat "$1" | ../Cpp/total_spectrum_from_stdin >> "${F}"
+cat "$1" | total_spectrum_from_stdin >> "${F}"
 echo "]" >> "${F}"
 
 curl -F "datafile=@${F}" \
