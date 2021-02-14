@@ -2,9 +2,13 @@ PROJECT(clab2019gscans)
 
 cmake_minimum_required(VERSION 3.5)
 
-add_executable(total_spectrum_from_stdin Cpp/total_spectrum_from_stdin.cpp)
-set_property(TARGET total_spectrum_from_stdin PROPERTY CXX_STANDARD 11)
-set_property(TARGET total_spectrum_from_stdin PROPERTY CXX_STANDARD_REQUIRED ON)
-target_include_directories(total_spectrum_from_stdin PUBLIC Cpp)
+foreach( cpp_program
+        total_energy_spectrum_from_stdin
+        total_time_energy_spectrum_from_stdin )
+    add_executable(${cpp_program} Cpp/${cpp_program}.cpp)
+    set_property(TARGET ${cpp_program} PROPERTY CXX_STANDARD 11)
+    set_property(TARGET ${cpp_program} PROPERTY CXX_STANDARD_REQUIRED ON)
+    target_include_directories(${cpp_program} PUBLIC Cpp)
+endforeach()
 
-configure_file(Bash/plot_totalspectrum.sh plot_totalspectrum.sh COPYONLY)
+configure_file(Bash/plot_total_energy_spectrum.sh plot_total_energy_spectrum.sh COPYONLY)

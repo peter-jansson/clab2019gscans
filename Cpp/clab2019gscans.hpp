@@ -1,9 +1,10 @@
 #ifndef clab2019gscans_hpp
 #define clab2019gscans_hpp
 
-#include <cstdint>
+#include <cinttypes>
+#include <cstdio>
 #include <istream>
-#include <sstream>
+#include <stdexcept>
 #include <string>
 #include <vector>
 
@@ -14,11 +15,9 @@ namespace clab2019gscans
 	{
 		uint64_t realtime_us;
 		uint32_t channel;
-		event(std::string line)
+		event(const std::string& line)
 		{
-			std::istringstream iss(line);
-			char comma;
-			iss >> realtime_us >> comma >> channel;
+			std::sscanf(line.c_str(),"%" PRIu64 ",%" PRIu32,&realtime_us,&channel);
 		}
 	};
 
