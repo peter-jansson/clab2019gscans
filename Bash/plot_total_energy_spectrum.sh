@@ -18,4 +18,4 @@ curl -F "datafile=@${F}" \
      -F "xlabel=Channel" \
      -F "ylabel=Count" \
      -F "yscale=log10" \
-     https://jansson.net/apps/plot/ -o "$2"
+     https://apps.jansson.net/plot/ -o "$2"
