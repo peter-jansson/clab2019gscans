@@ -11,7 +11,7 @@ To plot the energy spectrum of counts measured from the 45 degree corner of PWR0
 
 To write the one-channel-count-per-row energy spectrum of counts measured from the 45 degree corner of PWR01 on a file named "spectrum.txt", extract the data archive and run the command:
 
-`print_raw_total_energy_spectrum.sh "PWR01_start_2016-11-09 16.46.44_corner_45.txt" > spectrum.txt`
+`print_total_energy_spectrum.sh "PWR01_start_2016-11-09 16.46.44_corner_45.txt" > spectrum.txt`
 
 ## References
 
