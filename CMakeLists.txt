@@ -12,3 +12,5 @@ foreach( cpp_program
 endforeach()
 
 configure_file(Bash/plot_total_energy_spectrum.sh plot_total_energy_spectrum.sh COPYONLY)
+
+configure_file(Bash/print_raw_total_energy_spectrum.sh print_raw_total_energy_spectrum.sh COPYONLY)

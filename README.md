@@ -3,6 +3,15 @@ Parsers and analysers of gamma-ray spectroscopy data from measurements on spent 
 
 ![LGPL-3](https://www.gnu.org/graphics/lgplv3-with-text-154x68.png)
 
+## Examples
+
+To plot the energy spectrum of counts measured from the 45 degree corner of PWR01 on a file named "spectrum.svg", extract the data arvice and run the command:
+
+`plot_total_energy_spectrum.sh "PWR01_start_2016-11-09 16.46.44_corner_45.txt" spectrum.svg`
+
+To write the one-channel-count-per-row energy spectrum of counts measured from the 45 degree corner of PWR01 on a file named "spectrum.txt", extract the data archive and run the command:
+
+`print_raw_total_energy_spectrum.sh "PWR01_start_2016-11-09 16.46.44_corner_45.txt" > spectrum.txt`
 
 ## References
 
