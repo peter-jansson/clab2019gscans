@@ -15,4 +15,4 @@ To write the one-channel-count-per-row energy spectrum of counts measured from t
 
 ## References
 
-[1] Jansson P., Bengtsson M., Bäckström U., Grape S., Branger E., Sjöland A.; "*Time stamped list mode data from gamma-ray spectroscopic measurements on 47 nuclear fuel assemblies performed at Clab, Sweden, September 2016 through March 2019*"; Journal: Data in Brief; Vol: 31; DOI: [10.1016/j.dib.2020.106039](http://dx.doi.org/10.1016/j.dib.2020.106039); (2020)
+[1] Jansson P., Bengtsson M., Bäckström U., Grape S., Branger E., Sjöland A.; "*Time stamped list mode data from gamma-ray spectroscopic measurements on 47 nuclear fuel assemblies performed at Clab, Sweden, September 2016 through March 2019*"; Journal: Data in Brief; Vol: 31; DOI: [10.1016/j.dib.2020.106039](https://doi.org/10.1016/j.dib.2020.106039); (2020)
